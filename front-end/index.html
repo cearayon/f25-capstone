@@ -8,8 +8,106 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>test</p>
+    <header> 
+        <h1>Game Reviews</h1>
+    </header>
+    <main>
 
+    <form>
+        <input
+            type="text"
+            id="title"
+            placeholder="What's the game title?"/>
+        <section id = "dropdown-container">
+            <label for="genre">Choose a Genre</label>
+            <select>
+                <option value="FPS">FPS</option>
+                <option value="MMORPG">MMORPG</option>
+                <option value="RTS">RTS</option>
+                <option value="RPG">RPG</option>
+                <option value="Sports">Sports</option>
+                <option value="Action-adventure">Action-adventure</option>
+                <option value="Puzzle">Puzzle</option>
+            </select>
+        </section>
+
+        <input
+            type="text"
+            id="URL"
+            placeholder="What's the img URL?"/>
+
+        <section id="ratings-container">
+            <p>Rate the game:</p>
+            <div id="radio-container">
+                <label for="one">
+                    <input 
+                    type="radio"
+                    name="ratings"
+                    value="1"
+                    id="one"/>
+                </label>
+                1
+                <label for="two">
+                    <input 
+                    type="radio"
+                    name="ratings"
+                    value="2"
+                    id="two"/>
+                </label>
+                2
+                <label for="three">
+                    <input 
+                    type="radio"
+                    name="ratings"
+                    value="3"
+                    id="three"/>
+                </label>
+                3
+                <label for="four">
+                    <input 
+                    type="radio"
+                    name="ratings"
+                    value="4"
+                    id="four"/>
+                </label>
+                4
+                <label for="five">
+                    <input 
+                    type="radio"
+                    name="ratings"
+                    value="5"
+                    id="five"/>
+                5
+                </label>
+            </div>
+        </section>
+        <label for="game-text-review">Write a review for this game:</label>
+        <textarea id="game-text-review" name="game-text-review" rows="4" cols="50">
+        </textarea>
+
+        <button>Add game</button>
+
+
+
+
+        
+        
+        
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+    </main>
 
 
 
