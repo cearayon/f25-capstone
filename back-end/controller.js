@@ -31,14 +31,14 @@ module.exports = {
         
         if(req.body.type === 'plus'){
             if(games[index].rating >= 5){
-                res.status(400).send('Cannot rate movie beyond 5.');
+                res.status(400).send('Cannot rate game beyond 5.');
             } else {
                 games[index].rating++;
                 res.status(200).send(games)
             }
         } else {
             if(games[index].rating <= 1){
-                res.status(400).send('Cannot rate movie below 1.');
+                res.status(400).send('Cannot rate game below 1.');
             } else {
                 movies[index].rating--;
                 res.status(200).send(games)

@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name": "Escape from Tarkov",
+        "title": "Escape from Tarkov",
         "rating": 4,
         "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Escape_from_Tarkov.jpg/220px-Escape_from_Tarkov.jpg",
         "genre": "FPS",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2 ,
-        "name": "Apex Legends",
+        "title": "Apex Legends",
         "rating":  3,
         "imageURL": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg",
         "genre": "FPS",
@@ -18,11 +18,11 @@
 
     {
         "id": 3 ,
-        "name": "Black Desert Online",
-        "rating":  3.5,
+        "title": "Black Desert Online",
+        "rating":  3,
         "imageURL": "https://s1.pearlcdn.com/NAEU/Upload/Manager/MetaTag/af02fb5a4cb20220622085346201.png?v=637938176959521030",
         "genre": "MMORPG",
-        "comment": "If you like running in circles for hundreds of hours and gambling, this look no further."
+        "comment": "If you like running in circles for hundreds of hours and gambling, then look no further."
     }
 
 

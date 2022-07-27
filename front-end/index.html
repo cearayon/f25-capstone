@@ -20,7 +20,7 @@
             placeholder="What's the game title?"/>
         <section id = "dropdown-container">
             <label for="genre">Choose a Genre</label>
-            <select>
+            <select id="genre">
                 <option value="FPS">FPS</option>
                 <option value="MMORPG">MMORPG</option>
                 <option value="RTS">RTS</option>
@@ -33,7 +33,7 @@
 
         <input
             type="text"
-            id="URL"
+            id="imageURL"
             placeholder="What's the img URL?"/>
 
         <section id="ratings-container">
@@ -87,6 +87,8 @@
 
         <button>Add game</button>
 
+        <section id="games-container"></section>
+
 
 
 
@@ -110,7 +112,10 @@
     </main>
 
 
-
+<footer>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd">
+</footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ app.delete('/api/movies/:id', deleteGame);
 //endpoints complete//
 
 //port stuff boilerplate//
-const port = process.env.PORT || 4004
+const port = process.env.PORT || 5500
 app.listen(port, () => {
     console.log(`in at port ${port} boyooooo`)
 })
