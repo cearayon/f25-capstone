@@ -15,7 +15,7 @@ const {sendGames, createGame, updateGame, deleteGame} = require('./controller.js
 app.get('/api/games', sendGames);
 app.post('/api/games', createGame);
 app.put('/api/games/:id', updateGame);
-app.delete('/api/movies/:id', deleteGame);
+app.delete('/api/games/:id', deleteGame);
 //endpoints complete//
 
 //port stuff boilerplate//

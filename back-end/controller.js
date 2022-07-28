@@ -10,10 +10,10 @@ module.exports = {
     },
 
     createGame: (req,res) => {
-        const {name, rating, imageURL, genre, comment} = req.body
+        const {title, rating, imageURL, genre, comment} = req.body
 
-        let newGame= {
-            name,
+        let newGame = {
+            title,
             rating,
             imageURL,
             genre,
@@ -23,6 +23,7 @@ module.exports = {
         games.push(newGame)
         res.status(200).send(games)
         globalId++
+        console.log('endpoint hit')
     },
 
     updateGame: (req, res) => {
@@ -40,7 +41,7 @@ module.exports = {
             if(games[index].rating <= 1){
                 res.status(400).send('Cannot rate game below 1.');
             } else {
-                movies[index].rating--;
+                games[index].rating--;
                 res.status(200).send(games)
             }
         }
