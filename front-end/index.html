@@ -12,17 +12,24 @@
         <h1>Game Reviews</h1>
     </header>
     <main>
-
+        <div id="form-container">
     <form>
+        <h2> Hello</h2>
         <input
             type="text"
             id="title"
-            placeholder="What's the game title?"/>
+            placeholder="What's the game title?"
+            />
+            <input
+                type="text"
+                id="imageURL"
+                placeholder="What's the img URL?"/>
         <section id = "dropdown-container">
-            <label for="genre">Choose a Genre</label>
+            <label for="genre">Genre:</label>
             <select id="genre">
                 <option value="FPS">FPS</option>
                 <option value="MMORPG">MMORPG</option>
+                <option value="Survival">Survival</option>
                 <option value="RTS">RTS</option>
                 <option value="RPG">RPG</option>
                 <option value="Sports">Sports</option>
@@ -31,13 +38,9 @@
             </select>
         </section>
 
-        <input
-            type="text"
-            id="imageURL"
-            placeholder="What's the img URL?"/>
 
         <section id="ratings-container">
-            <p>Rate the game:</p>
+            <p>Rating:</p>
             <div id="radio-container">
                 <label for="one">
                     <input 
@@ -82,11 +85,13 @@
             </div>
         </section>
         <label for="game-text-review">Write a review for this game:</label>
-        <textarea id="game-text-review" name="game-text-review" rows="4" cols="50">
+        <textarea id="game-text-review" name="game-text-review" rows="4" cols="40">
         </textarea>
 
         <button id="add-button">Add game</button>
 
+    </form>
+</div>
         <section id="games-container"></section>
 
 
@@ -102,7 +107,6 @@
 
 
 
-    </form>
 
 
 
@@ -113,7 +117,15 @@
 
 
 <footer>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd">
+    <button class="ad"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd"></button>
+    
+    <button class="ad"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd"></button>
+    
+    <button class="ad"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd"></button>
+    
+    <button class="ad"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd"></button>
+    
+    <button class="ad"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxGbs5_qXMUvkxEcsLDzcz5YVG22KdHGXg&usqp=CAU" alt="mcdonaldsAd"></button>
 </footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>

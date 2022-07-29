@@ -1,13 +1,17 @@
+
+
 //grab HTML elements//
 const gamesContainer = document.querySelector('#games-container')
 const form = document.querySelector('form')
-const deleteButton = document.querySelector('delete')
-const addButton = document.querySelector('#add-button')
+const ad = document.getElementsByClassName('ad')
+
 //grab HTML elements//
 
 
+
+
 //base URL for easy reference
-const baseURL = `http://localhost:5500/api/games`
+const baseURL = `http://localhost:5501/api/games`
 
 const gamesCallback = ({data: games}) => displayGames(games)
 const errCallback = err => console.log(err.response.data)
@@ -52,9 +56,9 @@ function createGameCard(game) {
     const gameCard = document.createElement('div')
     gameCard.classList.add('game-card')
 
-    gameCard.innerHTML = `<img alt ='game cover' src=${game.imageURL} class="game-cover/>
+    gameCard.innerHTML = `<img alt ='game cover' src=${game.imageURL} class="game-cover"/>
     
-    <br>
+    
     <p class="game-title">${game.title}</p>
     <p class="genre">${game.genre}</p>
     <p class="comment">${game.comment}</p>
@@ -64,6 +68,7 @@ function createGameCard(game) {
 
         <button onclick="updateGame(${game.id}, 'plus')">+</button>
         </div>
+        <br>
         <button onclick="deleteGame(${game.id})">delete</button>`
 
         gamesContainer.appendChild(gameCard)
@@ -77,20 +82,29 @@ function displayGames(arr) {
 
 
     }
-
-
-
-
 }
 
 
 
 
 
-form.addEventListener('submit', submitHandler)
-addButton.addEventListener('click', createGame)
+
+
+
+//API call//
+function adClick(){
+    axios.get('https://api.adviceslip.com/advice')
+    .then((response) => {
+        console.log(response.data.slip.advice)
+        let advice = response.data.slip.advice
+        alert(`${advice}`)
+    })
+    
+}
+for(let i =0; i< ad.length; i++){
+    ad[i].addEventListener('click', adClick)
+}
+
 
 getAllGames()
-
-
-
+form.addEventListener('submit', submitHandler)
