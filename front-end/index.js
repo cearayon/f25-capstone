@@ -64,7 +64,7 @@ function createGameCard(game) {
     <p class="comment">${game.comment}</p>
     <div class="btns-container">
         <button onclick="updateGame(${game.id}, 'minus')">-</button>
-        <p class="game-rating">${game.rating} stars </p>
+        <p class="game-rating">${game.rating} stars</p>
 
         <button onclick="updateGame(${game.id}, 'plus')">+</button>
         </div>
