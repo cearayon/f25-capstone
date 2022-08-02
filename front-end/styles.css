@@ -12,30 +12,185 @@
   font-family: RextonLight;
 }
 
-/* button{
+header{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* height: 80px; */
+        background-color:#5bccf6;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        }
 
-} */
+
+nav{
+  font-family: RextonLight;
+  position:absolute;
+  text-align: left;
+  top:100%;
+  width:100%;
+  left: 0;
+  background:#5bccf6;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+
+  
+}
+nav ul {
+  font-family: RextonLight;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: .75rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color:black
+}
+
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left:0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display:block;
+  background:white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+  top: 7px;
+}
+
+
+nav a:hover {
+  color: #000;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1)
+}
+
+.nav-toggle:checked ~ nav a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px){
+  .nav-toggle-label{
+    display:none;
+  }
+
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+  }
+  
+  .logo {
+    grid-column: 2 / span 1;
+  }
+
+  nav{
+    all:unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul{
+    display: flex;
+    
+  }
+
+  nav li{
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a{
+    opacity:1;
+    position:relative;
+  }
+
+  nav a::before{
+    content:'';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+}
+  nav a:hover::before{
+    transform: scale(1,1)
+  }
+}
+
+#logo-pic{
+  height: 75px;
+  grid-column: 1/2;
+  
+}
 
 h1{
   font-family: RextonRegular;
+  font-size: 1.5em;
+  color:white;
+  
 }
 
 main{
     background-color:#fcde67;
+    width: 100%
 }
 
 
-header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        background-color:#fcde67;
-        
-        
-
-
-}
 
 button{
   font-family: RextonLight;
@@ -79,7 +234,6 @@ form{
     align-items: center;
     margin: 30px;
 
-    transition: ;
 }
 #games-container {
     display: flex;
@@ -102,10 +256,10 @@ form{
 }
 
   .game-card {
-    /* animation: left-to-right 1s ease-in forwards infinite alternate; */
+    
     font-family: RextonLight;
     font-size: small;
-    background-color: #3d4d66;
+    background-color: #333f53;
     color: white;
     width: 400px;
     margin: 20px; 
@@ -119,6 +273,7 @@ form{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+  
 
   #games-container {
     display: flex;

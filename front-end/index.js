@@ -56,9 +56,11 @@ function createGameCard(game) {
     const gameCard = document.createElement('div')
     gameCard.classList.add('game-card')
 
-    gameCard.innerHTML = `<img alt ='game cover' src=${game.imageURL} class="game-cover"/>
+    gameCard.innerHTML = `<div class="flip-card"><div class="flip-card-inner"<div class="flip-card-front">
+     <img alt ='game cover' src=${game.imageURL} class="game-cover"/>
+     </div>
     
-    
+    <div class="flip-card-back">
     <p class="game-title">${game.title}</p>
     <p class="genre">${game.genre}</p>
     <p class="comment">${game.comment}</p>
@@ -69,7 +71,10 @@ function createGameCard(game) {
         <button onclick="updateGame(${game.id}, 'plus')">+</button>
         </div>
         <br>
-        <button onclick="deleteGame(${game.id})">delete</button>`
+        <button onclick="deleteGame(${game.id})">delete</button>
+        </div>
+        </div>
+        </div>`
 
         gamesContainer.appendChild(gameCard)
         
