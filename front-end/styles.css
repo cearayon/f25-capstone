@@ -13,11 +13,11 @@
 }
 
 header{
-        /* display: flex;
+        display: flex;
         justify-content: center;
-        align-items: center; */
-        /* height: 80px; */
-        background-color:#5bccf6;
+        align-items: center; 
+         height: 80px; 
+        background-color:#333f53;
         text-align: center;
         position: fixed;
         width: 100%;
@@ -32,7 +32,7 @@ nav{
   top:100%;
   width:100%;
   left: 0;
-  background:#5bccf6;
+  background:#333f53;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -175,18 +175,18 @@ nav a:hover {
 #logo-pic{
   height: 75px;
   grid-column: 1/2;
-  
+  display:flex;
+  align-items:center;
 }
 
 h1{
   font-family: RextonRegular;
   font-size: 1.5em;
-  color:white;
-  
+  color:#fcde67;
 }
 
 main{
-    background-color:#fcde67;
+    background-color:#252d3c;
     width: 100%
 }
 
@@ -197,23 +197,20 @@ button{
 }
 
 body{
-    background-color:#fcde67;
+    background-color:#252d3c;
 }
 
 #form-container:hover form {
   animation: left-to-right 1s ease-in forwards infinite alternate;
   animation-play-state: paused;
 }
-  @keyframes   left-to-right {
+  
+@keyframes   left-to-right {
     100%{
       transform: translateX(100%);
     }
   }
     
-    
-  
-
-
 form{
     animation: left-to-right 1s ease-in forwards infinite alternate;
     font-family: RextonRegular;
@@ -233,8 +230,8 @@ form{
     justify-content: space-evenly; 
     align-items: center;
     margin: 30px;
+  }
 
-}
 #games-container {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +252,7 @@ form{
   font-size: x-large;
 }
 
-  .game-card {
+.game-card {
     
     font-family: RextonLight;
     font-size: small;
@@ -275,7 +272,7 @@ form{
   }
   
 
-  #games-container {
+#games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
