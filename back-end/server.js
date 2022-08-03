@@ -24,6 +24,24 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../front-end/index.js'))
 })
 
+app.get('/controller', (req, res) => {
+    res.sendFile(path.join(__dirname, './controller.js'))
+})
+
+app.get('/db', (req, res) => {
+    res.sendFile(path.join(__dirname, './db.json'))
+})
+
+app.get('/fonts', (req, res) => {
+    res.sendFile(path.join(__dirname, '../fonts'))
+})
+
+app.get('/logo', (req, res) => {
+    res.sendFile(path.join(__dirname, '../logo'))
+})
+
+
+
 
 //endpoints for our requests//
 app.get('/api/games', sendGames);
