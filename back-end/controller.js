@@ -1,5 +1,5 @@
 //here we import the db info from our json file to use the information in there
-const games = require('./db.json')
+const games = require('/db')
 let globalId = 4
 
 //export the controller functions for use in our server file
