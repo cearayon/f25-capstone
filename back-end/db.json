@@ -23,6 +23,33 @@
         "imageURL": "https://s1.pearlcdn.com/NAEU/Upload/Manager/MetaTag/af02fb5a4cb20220622085346201.png?v=637938176959521030",
         "genre": "MMORPG",
         "comment": "If you like running in circles for hundreds of hours and gambling, then look no further."
+    },
+
+    {
+        "id": 4 ,
+        "title": "Cat Quest",
+        "rating":  5,
+        "imageURL": "https://cdn.akamai.steamstatic.com/steam/apps/593280/capsule_616x353.jpg?t=1659090883",
+        "genre": "Adventure",
+        "comment": "A sentimental and wholesome game, it was a fun time to discover hidden easter eggs and treasures."
+    },
+
+    {
+        "id": 5 ,
+        "title": "S.T.A.L.K.E.R. Call of Pripyat",
+        "rating":  4,
+        "imageURL": "https://static.wikia.nocookie.net/stalker/images/5/57/CoP_Cover.jpg/revision/latest?cb=20091106142007",
+        "genre": "FPS",
+        "comment": "Roleplay as a modern treasure hunter and get eaten by radioactive mutants!"
+    },
+
+    {
+        "id": 6 ,
+        "title": "Raft",
+        "rating":  5,
+        "imageURL": "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/capsule_616x353.jpg?t=1655744208",
+        "genre": "Survival",
+        "comment": "Creative mode is fun and relaxing, and story mode is capitvating."
     }
 
 
