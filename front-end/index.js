@@ -11,7 +11,7 @@ const ad = document.getElementsByClassName('ad')
 
 
 //base URL for easy reference
-const baseURL = `http://localhost:5501/api/games`
+const baseURL = `/api/games`
 
 const gamesCallback = ({data: games}) => displayGames(games)
 const errCallback = err => console.log(err.response.data)
