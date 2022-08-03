@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const path = require('path')
+const path = require('path');
 app.use(express.json());
 app.use(cors());
 //end boilerplate code for server//
@@ -33,7 +33,7 @@ app.delete('/api/games/:id', deleteGame);
 //endpoints complete//
 
 //port stuff boilerplate//
-const port = process.env.PORT || 5501
+const port = process.env.PORT || 5500
 app.listen(port, () => {
     console.log(`in at port ${port} boyooooo`)
 })
