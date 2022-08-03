@@ -30,7 +30,7 @@
         "title": "Cat Quest",
         "rating":  5,
         "imageURL": "https://cdn.akamai.steamstatic.com/steam/apps/593280/capsule_616x353.jpg?t=1659090883",
-        "genre": "Adventure",
+        "genre": "RPG",
         "comment": "A sentimental and wholesome game, it was a fun time to discover hidden easter eggs and treasures."
     },
 
@@ -38,7 +38,7 @@
         "id": 5 ,
         "title": "S.T.A.L.K.E.R. Call of Pripyat",
         "rating":  4,
-        "imageURL": "https://static.wikia.nocookie.net/stalker/images/5/57/CoP_Cover.jpg/revision/latest?cb=20091106142007",
+        "imageURL": "https://cdn.cloudflare.steamstatic.com/steam/apps/41700/capsule_616x353.jpg?t=1655974624",
         "genre": "FPS",
         "comment": "Roleplay as a modern treasure hunter and get eaten by radioactive mutants!"
     },
