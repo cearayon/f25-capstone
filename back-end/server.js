@@ -8,7 +8,7 @@ app.use(cors());
 //end boilerplate code for server//
 
 //import controller functions//
-const {sendGames, createGame, updateGame, deleteGame} = require('./controller.js')
+const {sendGames, createGame, updateGame, deleteGame} = require('/controller')
 //import complete
 
 //heroku boilerplate
