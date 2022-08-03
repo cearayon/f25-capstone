@@ -8,37 +8,43 @@ app.use(cors());
 //end boilerplate code for server//
 
 //import controller functions//
-const {sendGames, createGame, updateGame, deleteGame} = require('/controller')
+const {sendGames, createGame, updateGame, deleteGame} = require('./controller.js')
 //import complete
 
 //heroku boilerplate
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/index.html'))
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../front-end/index.html'))
+// })
 
-app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/styles.css'))
-})
+// app.get('/css', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../front-end/styles.css'))
+// })
 
-app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/index.js'))
-})
+// app.get('/js', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../front-end/index.js'))
+// })
 
-app.get('/controller', (req, res) => {
-    res.sendFile(path.join(__dirname, './controller.js'))
-})
+// app.get('/controller', (req, res) => {
+//     res.sendFile(path.join(__dirname, './controller.js'))
+// })
 
-app.get('/db', (req, res) => {
-    res.sendFile(path.join(__dirname, './db.json'))
-})
+// app.get('/db', (req, res) => {
+//     res.sendFile(path.join(__dirname, './db.json'))
+// })
 
-app.get('/fonts', (req, res) => {
-    res.sendFile(path.join(__dirname, '../fonts'))
-})
+// app.get('/fonts', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../fonts'))
+// })
 
-app.get('/logo', (req, res) => {
-    res.sendFile(path.join(__dirname, '../logo'))
-})
+// app.get('/logo', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../logo'))
+// })
+
+app.use('/', express.static(path.join(__dirname, './frontend')))
+
+
+
+
 
 
 
