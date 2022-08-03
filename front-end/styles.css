@@ -1,14 +1,14 @@
 
 @font-face {
-  src: url(../fonts/RextonRegular.otf);
+  src: url(./fonts/RextonRegular.otf);
   font-family: RextonRegular;
 }
 @font-face {
-  src: url(../fonts/RextonBold.otf);
+  src: url(./fonts/RextonBold.otf);
   font-family: RextonBold;
 }
 @font-face {
-  src: url(../fonts/RextonLight.otf);
+  src: url(./fonts/RextonLight.otf);
   font-family: RextonLight;
 }
 
