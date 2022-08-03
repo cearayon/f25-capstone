@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
+const path = require('path')
 app.use(express.json());
 app.use(cors());
 //end boilerplate code for server//
@@ -10,6 +10,20 @@ app.use(cors());
 //import controller functions//
 const {sendGames, createGame, updateGame, deleteGame} = require('./controller.js')
 //import complete
+
+//heroku boilerplate
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../front-end/index.html'))
+})
+
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../front-end/styles.css'))
+})
+
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '../front-end/index.js'))
+})
+
 
 //endpoints for our requests//
 app.get('/api/games', sendGames);
