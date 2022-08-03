@@ -71,7 +71,7 @@ function createGameCard(game) {
         <button onclick="updateGame(${game.id}, 'plus')">+</button>
         </div>
         <br>
-        <button onclick="deleteGame(${game.id})">delete</button>
+        <button onclick="deleteGame(${game.id})">remove card</button>
         </div>
         </div>
         </div>`
