@@ -2,7 +2,7 @@
   "name": "foundations-capstone",
   "version": "1.0.0",
   "description": "",
-  "main": "node server/index.js",
+  "main": "node back-end/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
