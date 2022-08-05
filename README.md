@@ -13,11 +13,11 @@ Once those were functioning, I spent most of the extra time diving deep into CSS
 
 
 FEATURES:
--Viewing precreated video game review "cards"
--Creating a new video game review "card"
--Modifying existing video game review ratings
--Deleting existing video game review "card"
--API request embedded in "adblock"
+<br>Viewing precreated video game review "cards"
+<br>Creating a new video game review "card"
+<br>Modifying existing video game review ratings
+<br>Deleting existing video game review "card"
+<br>API request embedded in "adblock"
 
 TECH STACK:
 -Vanilla JS
