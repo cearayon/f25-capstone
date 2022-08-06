@@ -1,29 +1,17 @@
 
-
-//grab HTML elements//
 const gamesContainer = document.querySelector('#games-container')
 const form = document.querySelector('form')
 const ad = document.getElementsByClassName('ad')
 
-//grab HTML elements//
-
-
-
-
-//base URL for easy reference
 const baseURL = `/api/games`
 
 const gamesCallback = ({data: games}) => displayGames(games)
 const errCallback = err => console.log(err.response.data)
 
-
-//axios requests//
 const getAllGames = () => axios.get(baseURL).then(gamesCallback).catch(errCallback);
 const createGame = body => axios.post(baseURL, body).then(gamesCallback).catch(errCallback);
 const updateGame = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(gamesCallback).catch(errCallback);
 const deleteGame = id => axios.delete(`${baseURL}/${id}`).then(gamesCallback).catch(errCallback);
-
-//function to getAllGames on load
 
 function submitHandler(e) {
     e.preventDefault();
@@ -84,19 +72,9 @@ function displayGames(arr) {
     gamesContainer.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
         createGameCard(arr[i])
-
-
     }
 }
 
-
-
-
-
-
-
-
-//API call//
 function adClick(){
     axios.get('https://api.adviceslip.com/advice')
     .then((response) => {
@@ -104,12 +82,11 @@ function adClick(){
         let advice = response.data.slip.advice
         alert(`${advice}`)
     })
-    
 }
+
 for(let i =0; i< ad.length; i++){
     ad[i].addEventListener('click', adClick)
 }
-
 
 getAllGames()
 form.addEventListener('submit', submitHandler)
